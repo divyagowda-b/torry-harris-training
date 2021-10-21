@@ -2,81 +2,66 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Passenger details</title>
-
-
-
+    <title>Passenger Details</title>
 
 <style>
-body {background-image:url("C:\Users\user310\IdeaProjects\TicketUI\src\main\webapp\trainimg.jfif");}
+body{background-image: url("trainimg.jfif");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    }
+     button{
+    width:10%;
+    color:orange;
+    padding:15px;
+    margin:10px 0px;
+    border : none;
+    cursor : pointer;
+    }
 </style>
 </head>
 <body>
 <center>
-    <h3>passenger details</h3>
-<table>
+
+    <h2>Passenger Details</h2>
+    <form>
+
+<table border="0px">
 
 <tr>
-    Enter number of passengers:
-    <input type="text">&nbsp;<br><br>
+    <td>Enter number of passengers:</td>
+    <td><input type="text"></td>
 
-
-    Name:
-    <input type="text">&nbsp;
-
-    Age:
-    <input type="radio" name="Age" value="15-25">15-25
-    <input type="radio" name="Age" value="25-40">25-40
-    <input type="radio" name="Age" value="40 & more">40 & more&nbsp;
-
-    Gender:
-   <select name = "Gender">
-        <option value ="Select">Select</option>
-        <option value ="Male">Male</option>
-        <option value ="Female">Female</option>
-        <option value ="Other">Other</option>&nbsp;
-
-    </select>
-
-</tr><br><br>
+</tr>
     <tr>
-Name:
-<input type="text">&nbsp;
-Age:
-<input type="radio" name="Age" value="15-25">15-25
-<input type="radio" name="Age" value="25-40">25-40
-<input type="radio" name="Age" value="40 & more">40 & more&nbsp;
-
-        Gender:
-<select name = "Gender">
-    <option value ="Select">Select</option>
-    <option value ="Male">Male</option>
-    <option value ="Female">Female</option>
-    <option value ="Other">Other</option>&nbsp;
-
-</select>
-
-</tr><br><br>
-    <tr>
-        Name:
-        <input type="text">&nbsp;
-        Age:
-        <input type="radio" name="Age" value="15-25">15-25
-        <input type="radio" name="Age" value="25-40">25-40
-        <input type="radio" name="Age" value="40 & more">40 & more&nbsp;
-
-        Gender:
-        <select name = "Gender">
-            <option value ="Select">Select</option>
-            <option value ="Male">Male</option>
-            <option value ="Female">Female</option>
-            <option value ="Other">Other</option>&nbsp;
-
-        </select>
-
+        <td>Name: </td>
+        <td><input type="text">&nbsp;</td>
     </tr>
+    <tr>
+
+        <td>Age:</td>
+        <td><input type="radio" name="Age" value="15-25">15-25
+        <input type="radio" name="Age" value="25-40">25-40
+            <input type="radio" name="Age" value="40 & more">40 & more&nbsp</td>
+    </tr>
+
+       <tr>
+           <td>Gender:</td>
+       <td> <select name = "Gender">
+        <option value ="Select">Select</option>
+        <option value ="M">M</option>
+        <option value ="F">F</option>
+
+
+       </select></td>
+       </tr>
+
 </table><br><br>
-<input type = "button" value="submit">
+<button type = "submit" style="background-color:green" >Next</button><br>
+        <button type = "submit" style="background-color:#f1f1f1">clear</button>
+
+
+</form>
 </center>
 </body>
 </html>
